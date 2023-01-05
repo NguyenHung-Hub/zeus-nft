@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 70px;
+
+    border-bottom: 1px solid #f8e0fb;
+
+    .nav-left,
+    .nav-right {
+        display: flex;
+    }
+
+    .nav-center {
+    }
+
+    .nav-item {
+        padding: 12px;
+        font-size: 1.6rem;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 500;
+        line-height: 20px;
+        opacity: 0.5;
+        color: #000;
+        border-radius: 4px;
+
+        &:hover {
+            opacity: 0.8;
+
+            background-color: rgb(222, 222, 222);
+        }
+    }
+}
