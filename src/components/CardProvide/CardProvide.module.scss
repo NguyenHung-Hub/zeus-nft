@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card-icon {
+        // width: 48px;
+
+        .icon {
+            object-fit: cover;
+        }
+    }
+    .card-body {
+        margin: 16px 0;
+
+        .title {
+            text-align: center;
+
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: 2.4rem;
+        }
+        .descriptions {
+            text-align: center;
+            color: #532c59;
+            font-size: 1.4rem;
+        }
+    }
+}

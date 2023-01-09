@@ -4,6 +4,7 @@ import styles from './Home.module.scss';
 import Banner from '~/layouts/components/Banner';
 import HotCollections from '~/layouts/components/HotCollections';
 import OurTeam from '~/layouts/components/OurTeam';
+import Provide from '~/layouts/components/Provide';
 
 const cx = classNames.bind(styles);
 
@@ -13,6 +14,7 @@ function Home() {
             <Banner />
             <HotCollections />
             <OurTeam />
+            <Provide />
         </div>
     );
 }
