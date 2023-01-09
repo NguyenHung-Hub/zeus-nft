@@ -1,0 +1,38 @@
+.wrapper {
+    .section-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        margin-bottom: 64px;
+
+        .title,
+        .descriptions {
+            text-align: center;
+            width: 60%;
+        }
+
+        .title {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 4.8rem;
+        }
+        .descriptions {
+            font-size: 1.6rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            color: #532c59;
+        }
+    }
+    .section-body {
+        display: grid;
+        grid-template-columns: repeat(3, 412px);
+        row-gap: 64px;
+        column-gap: 32px;
+        // align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
