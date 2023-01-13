@@ -5,6 +5,7 @@ import Banner from '~/layouts/components/Banner';
 import HotCollections from '~/layouts/components/HotCollections';
 import OurTeam from '~/layouts/components/OurTeam';
 import Provide from '~/layouts/components/Provide';
+import Testimonials from '~/layouts/components/Testimonials';
 
 const cx = classNames.bind(styles);
 
@@ -15,6 +16,7 @@ function Home() {
             <HotCollections />
             <OurTeam />
             <Provide />
+            <Testimonials />
         </div>
     );
 }
