@@ -1,0 +1,37 @@
+.wrapper {
+    padding: 24px;
+
+    border: 1px solid #d6bcfa;
+    border-radius: 10px;
+    align-self: flex-start;
+
+    break-inside: avoid;
+
+    & + .wrapper {
+        margin-top: 32px;
+    }
+
+    .card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .question {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .more-btn {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .answer {
+        color: #532c59;
+        font-size: 1.6rem;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+}
