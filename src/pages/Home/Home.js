@@ -7,6 +7,7 @@ import OurTeam from '~/layouts/components/OurTeam';
 import Provide from '~/layouts/components/Provide';
 import Testimonials from '~/layouts/components/Testimonials';
 import FAQ from '~/layouts/components/FAQ';
+import CTA from '~/layouts/components/CallToAction/CTA';
 
 const cx = classNames.bind(styles);
 
@@ -19,6 +20,7 @@ function Home() {
             <Provide />
             <Testimonials />
             <FAQ />
+            <CTA />
         </div>
     );
 }
