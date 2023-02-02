@@ -22,7 +22,7 @@ function CardProduct({ id, name, descriptions, image }) {
 CardProduct.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
+    descriptions: PropTypes.string.isRequired,
 };
 
 export default CardProduct;

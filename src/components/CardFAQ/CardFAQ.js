@@ -29,9 +29,8 @@ function CardFAQ({ question, answer }) {
 }
 
 CardFAQ.propTypes = {
-    name: PropTypes.string.isRequired,
-    username: PropTypes.string.isRequired,
-    testimonial: PropTypes.string.isRequired,
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired,
 };
 
 export default CardFAQ;
