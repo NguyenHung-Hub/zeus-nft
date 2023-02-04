@@ -11,8 +11,10 @@ const images = {
     bg_shape_4: require('./Background_shape_4.svg').default,
     bg_shape_5: require('./Background_shape_5.png'),
     bg_shape_6: require('./Background_shape_6.png'),
+
     angle_down: require('./angle-down.svg').default,
     angle_up: require('./angle-up.svg').default,
+    chevron_up: require('./chevron-up.svg').default,
 };
 
 export default images;

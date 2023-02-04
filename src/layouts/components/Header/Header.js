@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 function Header() {
     return (
-        <div className={cx('wrapper')}>
+        <div id={cx('scroll-to-top')} className={cx('wrapper')}>
             <div className={cx('nav-left')}>
                 <Link to={'/'}>
                     <div className={cx('nav-item')}>Home</div>

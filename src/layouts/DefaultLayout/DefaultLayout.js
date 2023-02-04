@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import Header from '~/layouts/components/Header';
 import Footer from '~/layouts/components/Footer';
+import ScrollTopButton from '~/components/ScrollTopButton';
 
 const cx = classNames.bind(styles);
 
@@ -14,6 +15,7 @@ function DefaultLayout({ children }) {
             <Header />
             <div className={cx('content')}>{children}</div>
             <Footer />
+            <ScrollTopButton />
         </div>
     );
 }
