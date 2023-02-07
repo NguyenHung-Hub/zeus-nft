@@ -1,5 +1,6 @@
+@use '../../../styles' as *;
+
 .wrapper {
-    // display: flex;
     padding: 80px 0;
     display: grid;
     grid-template-columns: 33.3333% auto;
@@ -12,21 +13,16 @@
         .title {
             margin-bottom: 24px;
 
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            font-size: 4.8rem;
+            @include text-title();
             text-align: center;
         }
         .sub-title {
-            color: #532c59;
-            font-size: 1.6rem;
-            font-family: 'Space Grotesk', sans-serif;
+            @include text();
         }
     }
 
     .section-right {
         columns: 2;
-
         gap: 32px;
     }
 }

@@ -1,3 +1,5 @@
+@use '../../styles' as *;
+
 .wrapper {
     padding: 24px;
 
@@ -17,9 +19,8 @@
         align-items: flex-start;
 
         .question {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 500;
+            @include text-500();
+            color: #000;
         }
 
         .more-btn {
@@ -30,8 +31,6 @@
     }
 
     .answer {
-        color: #532c59;
-        font-size: 1.6rem;
-        font-family: 'Space Grotesk', sans-serif;
+        @include text();
     }
 }

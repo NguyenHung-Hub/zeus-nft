@@ -1,16 +1,16 @@
+@use '../../styles/' as *;
+
 .scroll-to-top {
     position: fixed;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
 
     width: 60px;
     height: 60px;
     border-radius: 50%;
 
     // background: rgb(230, 230, 230);
-    background: #532c59;
+    background: $text-color;
     box-shadow: 5px 5px 37px -4px rgba(75, 75, 75, 0.61);
 
     right: 50px;

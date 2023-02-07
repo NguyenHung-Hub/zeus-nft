@@ -1,3 +1,5 @@
+@use '../../../styles/' as *;
+
 .wrapper {
     padding: 80px 0;
     .section-head {
@@ -6,20 +8,13 @@
         .title {
             margin-bottom: 24px;
 
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            font-size: 4.8rem;
+            @include text-title();
             text-align: center;
         }
     }
 
     .section-body {
-        // display: grid;
-        // grid-template-columns: repeat(3, minmax(100px, 1fr));
-        // gap: 32px;
-
         columns: 3;
-
         gap: 32px;
     }
 }

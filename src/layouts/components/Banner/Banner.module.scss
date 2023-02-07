@@ -1,15 +1,14 @@
+@use '../../../styles' as *;
+
 $width-image-1: 174px;
 $width-image-2: 112px;
 $width-image-3: 300px;
 $width-image-4: 210px;
 
 .wrapper {
-    // width: 100%;
-
     .main-banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
+
         position: relative;
         width: 100%;
         height: 580px;
@@ -30,23 +29,18 @@ $width-image-4: 210px;
                 }
 
                 p {
-                    font-size: 1.6rem;
-                    font-family: 'Space Grotesk', sans-serif;
-                    font-weight: 400;
-                    color: #532c59;
+                    @include text-400();
                     margin-bottom: 32px;
                 }
             }
 
             .button-wrapper {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-center();
             }
         }
 
         .let-sell-btn {
-            background-color: #532c59;
+            background-color: $text-color;
             color: #fff;
             border-radius: 15px;
         }
@@ -85,9 +79,7 @@ $width-image-4: 210px;
         }
     }
     .sub-banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center();
 
         height: 120px;
 

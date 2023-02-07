@@ -1,3 +1,5 @@
+@use '../../styles/' as *;
+
 .wrapper {
     padding: 24px;
 
@@ -21,9 +23,8 @@
         }
         .info {
             .name {
-                font-family: 'Space Grotesk', sans-serif;
-                font-size: 1.6rem;
-                font-weight: 500;
+                @include text-500();
+                color: #000;
             }
             .username {
                 color: #000;
@@ -34,9 +35,7 @@
 
     .card-body {
         .testimonial {
-            color: #532c59;
-            font-size: 1.6rem;
-            font-family: 'Space Grotesk', sans-serif;
+            @include text();
         }
     }
 }

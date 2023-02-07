@@ -1,3 +1,5 @@
+@use '../../../styles' as *;
+
 .wrapper {
     padding: 80px 70px 40px 70px;
 
@@ -20,7 +22,7 @@
                 &:hover {
                     cursor: pointer;
 
-                    color: #532c59;
+                    color: $text-color;
                     opacity: 1;
                 }
             }
