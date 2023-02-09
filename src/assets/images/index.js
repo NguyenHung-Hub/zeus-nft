@@ -15,6 +15,8 @@ const images = {
     angle_down: require('./angle-down.svg').default,
     angle_up: require('./angle-up.svg').default,
     chevron_up: require('./chevron-up.svg').default,
+    menu: require('./menu.svg').default,
+    close: require('./close.svg').default,
 };
 
 export default images;

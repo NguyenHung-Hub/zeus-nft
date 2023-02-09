@@ -11,6 +11,7 @@ $width-image-4: 210px;
 
         position: relative;
         width: 100%;
+
         height: 580px;
 
         .content {
@@ -24,6 +25,7 @@ $width-image-4: 210px;
 
             .text-wrapper {
                 h2 {
+                    text-align: center;
                     font-size: 6rem;
                     margin-bottom: 32px;
                 }
@@ -85,6 +87,101 @@ $width-image-4: 210px;
 
         .logo-item {
             margin: 0 20px;
+        }
+    }
+}
+
+/* Tablet and mobile:  width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+    .wrapper {
+        .main-banner {
+            .content {
+                .text-wrapper {
+                    h2 {
+                        font-size: 4.8rem;
+                    }
+                }
+            }
+
+            .background {
+                &.bg-shape-1 {
+                    left: -5px;
+                    top: 5px;
+                }
+                &.bg-shape-2 {
+                    right: -5%;
+                    top: 10px;
+                }
+                &.bg-shape-3 {
+                    left: -8%;
+                    top: 65%;
+                }
+                &.bg-shape-4 {
+                    right: -6%;
+                    bottom: -10px;
+                }
+
+                .image-1 {
+                    width: calc($width-image-1 * 0.8);
+                }
+                .image-2 {
+                    width: calc($width-image-2 * 0.8);
+                }
+                .image-3 {
+                    width: calc($width-image-3 * 0.8);
+                }
+                .image-4 {
+                    width: calc($width-image-4 * 0.8);
+                }
+            }
+        }
+        .sub-banner {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+    }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .wrapper {
+        .main-banner {
+            .background {
+                .image-1 {
+                    width: calc($width-image-1 * 0.8);
+                }
+                .image-2 {
+                    width: calc($width-image-2 * 0.8);
+                }
+                .image-3 {
+                    width: calc($width-image-3 * 0.8);
+                }
+                .image-4 {
+                    width: calc($width-image-4 * 0.8);
+                }
+            }
+        }
+    }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    .wrapper {
+        .main-banner {
+            .background {
+                .image-1 {
+                    width: calc($width-image-1 * 0.6);
+                }
+                .image-2 {
+                    width: calc($width-image-2 * 0.6);
+                }
+                .image-3 {
+                    width: calc($width-image-3 * 0.4);
+                }
+                .image-4 {
+                    width: calc($width-image-4 * 0.6);
+                }
+            }
         }
     }
 }
