@@ -24,14 +24,6 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-
-        .nav-logo {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-
-            transform: translate(-50%, -50%);
-        }
     }
 
     .nav-left,
@@ -161,6 +153,14 @@
             .nav-left,
             .nav-right {
                 display: none;
+            }
+
+            .nav-logo {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+
+                transform: translate(-50%, -50%);
             }
         }
     }
